@@ -30,6 +30,7 @@
 
   /*  width variable */
   --container-width: 38rem;
+  --button-width: 15rem;
   /* border redius variables */
   --button-border-redius: 0.8rem;
   --border-redius: 1rem;
@@ -358,7 +359,11 @@ body {
   font-size: var(--font-md);
 }
 .load-More-Button{
-  padding: var(--font-xs) var(--font-md);
+  padding: var(--font-s) var(--font-xxl);
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  background-color: transparent;
 }
 .loadBtn {
   padding: var(--font-xs) var(--font-s);
@@ -367,7 +372,7 @@ body {
   background-color: var(--bg-button-hover-color);
   color: var(--bg-body-Colors);
   border-radius: var(--button-border-redius);
-  width: fit-content;
+  width: var(--button-width);
 }
 
 .cart-item {
